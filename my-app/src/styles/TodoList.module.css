@@ -1,0 +1,52 @@
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*[가로 위치] [세로 위치] [번짐 정도] [그림자 크기] [그림자 색상] [그림자 형태];*/
+}
+
+input[type="text"].itemInput {
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+button.addButton {
+  min-width: 30px;
+  padding: 5px;
+  background-color: #ccc;
+  color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  /*마우스 커서를 손가락 모양으로 바꾸어 클릭 가능한 요소임을 나타내는 것
+    default: 기본 커서
+auto: 브라우저가 자동으로 커서 모양을 결정
+text: 텍스트 입력이 가능한 요소에서 사용되는 커서
+move: 요소 이동 커서
+wait: 기다리는 커서
+help: 도움말 커서
+not-allowed: 요소 클릭이 불가능한 커서
+crosshair: 십자선 모양 커서
+e-resize, n-resize, s-resize, w-resize, ne-resize, nw-resize, se-resize, sw-resize: 해당 방향으로 크기를 조절하는 커서*/
+}
+
+button.addButton:hover {
+  background-color: white;
+  color: #ccc;
+}
+
+.todoItem {
+  display: flex; /*flexbox 레이아웃모델로 설정, display 값을 속성으로 가짐, allign 방식에 가까운듯*/
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.todoText {
+  margin-left: 10px;
+  flex-grow: 1; /*flex-grow: 1은 해당 Flex Item이 사용 가능한 모든 공간을 차지하도록 늘어나도록 지정, 한줄 전체가 텍스트로 꽉차게!!*/
+}
